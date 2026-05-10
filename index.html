@@ -1,221 +1,488 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Suraj's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="description" content="Suraj Kumar Raja Ratnam — Mechanical & Robotics Engineer. Industrial robot integration, autonomous systems, BCI firmware, CNC manufacturing." />
+  <title>Suraj Kumar — Mechanical & Robotics Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-mark">SK</span>
+        <span class="brand-name">Suraj Kumar</span>
+      </a>
+      <nav aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          <span class="nav-toggle-bar"></span>
+          <span class="visually-hidden">Toggle menu</span>
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Suraj Kumar</strong> <span>Raja Ratnam</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Mechanical & Robotics Engineer</p>
+          <h1>
+            Building <span class="accent">robots</span> that ship.
+          </h1>
+          <p class="lede">
+            I'm Suraj Kumar — a first-principles engineer with three years of
+            zero-to-one work across industrial manipulators, autonomous UAS,
+            and brain-computer interfaces. Currently integrating production
+            robotics at <strong>Devol Robots</strong> in Kuala Lumpur.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">See robotics work</a>
+            <a class="btn btn-ghost" href="suraj-kumar-cv.pdf" download>Download CV</a>
+          </div>
+          <ul class="meta-row" role="list">
+            <li><span class="meta-label">Now</span> Devol Robots, KL</li>
+            <li><span class="meta-label">Stack</span> ROS · C++ · Python · KRL</li>
+            <li><span class="meta-label">Hardware</span> KUKA · Flexiv · Jaka · Pixhawk</li>
+            <li><span class="meta-label">Education</span> Purdue '22 · BS ME, Math minor</li>
+          </ul>
+        </div>
+        <figure class="hero-figure">
+          <img src="images/face.jpg" alt="Portrait of Suraj Kumar" loading="eager" />
+        </figure>
+      </div>
+    </section>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links"> <!-- Control the menu-->
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Projects</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
-					</nav>
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">01</span> About</h2>
+        <div class="prose">
+          <p>
+            I'm a Malaysian mechanical engineer who works at the seam between
+            hardware and software — the place where a CAD model becomes a
+            moving robot, where firmware decides how a sensor behaves, where a
+            CAM toolpath becomes a finished part.
+          </p>
+          <p>
+            Across three startup roles I've done product design, structural
+            and thermal analysis, CNC manufacturing, autopilot configuration,
+            Jetson AGX setup, and industrial robot integration. I've trained
+            interns, pulled investor demos together, and set design
+            requirements for shipping hardware.
+          </p>
+          <p>
+            I learn fast, work to a tight standard, and care most about the
+            stuff that turns a prototype into a product.
+          </p>
+        </div>
+      </div>
+    </section>
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>Hi, my name is Suraj</h1>
-							</header>
-							<div class="content">
-								<p>A Comprehensive<br />
-								Portfolio</p>
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Get Started</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
+    <section id="works" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">02</span> Recent Works</h2>
+        <!-- Cards rendered by js/main.js — drop YouTube URLs into the
+             RECENT_WORKS array there. IDs (video-kuka / video-bfd / video-sherpy)
+             are referenced by the project-card link map below. -->
+        <div class="video-row" id="video-row"></div>
+      </div>
+    </section>
 
-				<!-- Main -->
-					<div id="main">
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">03</span> Experience</h2>
+        <ol class="timeline" role="list">
 
-						<!-- One -->
-							<section id="one" class="tiles">
-								<!-- Put Purdue logo, and the major and minor -->
-								<article>
-									<span class="image">
-										<img src="images/purdue.png" alt="" />
-									</span>
-									<header class="major">
-										<h3>Purdue Class of 2022</h3>
-										<p>B.Sc in Mechanical Engineering</p>
-										<p>Minor in Math</p>
-									</header>
-								</article>
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Dec 2025 — Present</span>
+              <span class="timeline-tag">Robotics</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Devol Robots Sdn. Bhd. — Kuala Lumpur</h3>
+              <p class="timeline-role">Mechanical & Robotics Engineer</p>
+              <ul>
+                <li>Designed, sourced, and assembled a testing jig for 60 Nm robotic arms in 5 days for the company's business plan.</li>
+                <li>Full system integration of a Flexiv robot with a Python codebase — computer vision and remote control — in 2 days.</li>
+                <li>Diagnosed computer-vision distortion issues with a systematic variable breakdown in 1 day.</li>
+                <li>Refactored an MVVM C++ codebase and tested hardware for a Fanuc palletizer at Port Klang — 3× faster than baseline.</li>
+                <li>Solved mechanical issues for system deployment to Edmund Optics, achieving a 95% success rate.</li>
+                <li>Integrated Linkerbot hand software into the C++ codebase to enable advanced robotic motion in 1 day.</li>
+                <li>Engineered sub-millisecond synchronization between two Jaka robots using barrier-stop threading — won a deployment with Faratronic China ($4B).</li>
+                <li>Trained and supervised interns producing AI tech-stack demo videos for founder fundraising.</li>
+                <li>Tuned URDFs for two impedance-controlled robots, refining acceleration / velocity for smooth joint trajectories.</li>
+              </ul>
+            </div>
+          </li>
 
-								
-								<article> <!-- Put a face picture of myself DONE-->
-									<span class="image">
-										<img src="images/face.jpg" alt="" />
-									</span>
-									<header>
-										<h2>Me in Alaska!</h2>
-									</header>
-								</article>
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Dec 2024 — June 2025</span>
+              <span class="timeline-tag">BCI · Firmware</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Cerelog Inc. — New York City</h3>
+              <p class="timeline-role">Firmware Engineer & Mechanical Product Design</p>
+              <ul>
+                <li>Developed and sold new EEG hardware with improved firmware to make BCI ubiquitous.</li>
+                <li>Led product development of a tDCS beanie — first-mover advantage in wearables.</li>
+                <li>Drove down technical risk of biopotential acquisition from an electrical-noise standpoint.</li>
+              </ul>
+            </div>
+          </li>
 
-								<!-- Projects that I have worked on -->
-								<article>
-									<span class="image">
-										<img src="images/gears.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Projects</a></h3>
-										<p>Quick Overview of Projects</p>
-									</header>
-								</article>
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Aug 2022 — July 2024</span>
+              <span class="timeline-tag">UAS · CNC</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Sherpy Inc. — New York City</h3>
+              <p class="timeline-role">Co-Founder & CTO</p>
+              <ul>
+                <li>Built 5 kW autonomous mobile robots — large carbon-fiber quadcopters for aerial advertising.</li>
+                <li>Led RC flight-testing operations for large quads and hexacopters at FAA FRIAs in NYC.</li>
+                <li>Configured Pixhawk autopilot for VTOL UAS via Mission Planner.</li>
+                <li>Led wiring for a 3 m wingspan VTOL UAS using FAA advisory circulars.</li>
+                <li>Built an Unreal Engine simulation with Microsoft AirSim and ArduPilot SITL for a C++ DAA solution.</li>
+                <li>Integrated Fusion 360 CAM and RoboDK for 5-axis manufacturing on a KUKA KR300 — at $0 added cost.</li>
+                <li>Manufactured large foam molds (HSD ES951 spindle) at <strong>75% timeline reduction</strong> for CFRP layup.</li>
+                <li>Developed robotic milling and concrete-3D-printing cells with the KUKA and Fusion 360 CAM.</li>
+                <li>Sourced & procured a KUKA KR300 from Bilbao plus a 2022 HAAS MiniMill.</li>
+                <li>Designed a 1 m liquid-hydrogen composite tank in Fusion 360.</li>
+                <li>Trained two employees on KUKA safety, KRL, and WorkVisual 6.0.</li>
+              </ul>
+            </div>
+          </li>
 
-								<!-- Companies that I have worked for (Work Experience)-->
-								<article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Work Experience</a></h3>
-										<p>Nisl sed aliquam</p>
-									</header>
-								</article>
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Sep 2021 — May 2022</span>
+              <span class="timeline-tag">Research</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Specere Labs — Birck Nanotechnology Center, West Lafayette, IN</h3>
+              <p class="timeline-role">Thermal Engineer</p>
+              <ul>
+                <li>Collaborated with Dr. Thomas Beechem on work presented at IMECE 2022.</li>
+                <li>Computationally analyzed metamaterial stacks using the COMSOL Optics modules.</li>
+                <li>Applied solid-state physics to study phonon and polariton thermal conductivity.</li>
+              </ul>
+            </div>
+          </li>
 
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2021 — Aug 2021</span>
+              <span class="timeline-tag">Robotics · ROS</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Mahmoudian Labs — West Lafayette, IN</h3>
+              <p class="timeline-role">Robotics Engineer (ME Summer Projects)</p>
+              <ul>
+                <li>Designed a robust, corrosion-resistant weight-attachment system for a research submarine.</li>
+                <li>Built a differential thrust-management ROS node for 12-hour autonomous catamaran operation.</li>
+              </ul>
+            </div>
+          </li>
 
-								<article> <!--Put in specere link-->
-									<span class="image">
-										<img src="images/r_lab.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="https://www.specere.org/people#:~:text=Aerospace%20Systems%0ALinkedin%20%E2%87%A2-,SURAJ%20KUMAR%20RAJA%20RATNAM,-Project%3A%20Polaritonic" class="link">Most recent research lab</a></h3>
-									</header>
-								</article>
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2021 — Aug 2021</span>
+              <span class="timeline-tag">Manufacturing</span>
+            </div>
+            <div class="timeline-body">
+              <h3>RODETUR Project, Zucrow Labs — West Lafayette, IN</h3>
+              <p class="timeline-role">Manufacturing Engineer</p>
+              <ul>
+                <li>Manufactured an SS304 turbocharger manifold at the BIDC, designing CAM for the HAAS VF-2.</li>
+                <li>Built a test-stand rig to suspend a 70 lb turbocharger modularly into the experiment.</li>
+                <li>Sourced control valves rated for 450 °F and 5 bar.</li>
+              </ul>
+            </div>
+          </li>
 
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2020 — Aug 2020</span>
+              <span class="timeline-tag">CV</span>
+            </div>
+            <div class="timeline-body">
+              <h3>ME Summer Projects — West Lafayette, IN</h3>
+              <p class="timeline-role">Computer Vision Engineer</p>
+              <ul>
+                <li>Implemented Hull transforms to count bacterial colonies in petri-dish images.</li>
+                <li>Investigated splitting eccentric colony clumps for accurate counts.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-								<article>
-									<span class="image">
-										<img src="images/new_york.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a>Location - New York</a></h3>
-									</header>
-								</article>
-							</section>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">04</span> Projects</h2>
+        <p class="prose section-intro">
+          Selected work — leaning toward robotics integration, autonomy, and
+          robotic manufacturing.
+        </p>
+        <div class="cards">
 
-						<!-- Two -->
-							<section id="two">
-								<div class="inner">
-									<header class="major">
-										<h2>Thanks for visiting!</h2>
-									</header>
-									<p>My resume, email, and phone number are available right below</p>
-									<!--<ul class="actions">
-										<li><a href="landing.html" class="button next">Get Started</a></li>
-									</ul>-->
-								</div>
-							</section>
+          <article class="card">
+            <h3>Multi-robot Synchronization</h3>
+            <p class="card-sub">Devol Robots · Jaka</p>
+            <ul>
+              <li>Sub-millisecond synchronization between two Jaka robots.</li>
+              <li>Used barrier-stop threading to coordinate motion deterministically.</li>
+              <li>Won a deployment project with Faratronic China — a $4B customer.</li>
+            </ul>
+          </article>
 
-					</div>
+          <article class="card">
+            <h3>Flexiv Integration</h3>
+            <p class="card-sub">Devol Robots · Python · CV</p>
+            <ul>
+              <li>End-to-end integration of a Flexiv arm into a Python codebase in 2 days.</li>
+              <li>Computer vision plus remote operation in a single deployable.</li>
+              <li>Diagnosed CV distortion with systematic variable breakdown in 1 day.</li>
+            </ul>
+          </article>
 
-				<!-- Contact -->
-				<section id="contact">
-					<div class="inner">
-						<!--<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="primary" /></li>
-									<li><input type="reset" value="Clear" /></li>
-								</ul>
-							</form>
-						</section>-->
+          <article class="card">
+            <h3>URDF Tuning &amp; Impedance Control</h3>
+            <p class="card-sub">Devol Robots</p>
+            <ul>
+              <li>Tuned URDFs for two impedance-controlled robots.</li>
+              <li>Refined acceleration and velocity profiles for smooth joint trajectories.</li>
+              <li>Integrated Linkerbot hand software into a C++ stack for advanced motion.</li>
+            </ul>
+          </article>
 
-						<section class="vert-split">
-							<section>
-								<div class="contact-method">
-									<span class="icon solid alt fa-envelope"></span>
-									<h3>Email</h3>
-									<a href="mailto:surajratnam99@gmail.com">surajratnam99@gmail.com</a>
-								</div>
-							</section>
-							<section>
-								<div class="contact-method">
-									<span class="icon solid alt fa-phone"></span>
-									<h3>Phone</h3>
-									<span>+1 (765) 714-7476</span>
-								</div>
-							</section>
-							<section>
-								<div class = "contact-method">
-									<i class="icon solid alt fa-download"></i>
-									<h3>Resume</h3>
-									<a href="SurajKumar_resume.pdf" download="SurajKumar_resume">Download</a>
-								</div>
-							</section>
-							
-						</section>
-					</div>
-				</section>
+          <article class="card">
+            <h3>Fanuc Palletizer Refactor</h3>
+            <p class="card-sub">Devol Robots · MVVM C++</p>
+            <ul>
+              <li>Refactored an MVVM C++ codebase for a Fanuc palletizer.</li>
+              <li>3× faster hardware testing throughput at Port Klang.</li>
+              <li>Drove deployment of system to Edmund Optics with a 95% success rate.</li>
+            </ul>
+          </article>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>Design taken from: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+          <article class="card card-link" data-link="kuka" tabindex="0" role="link" aria-label="KUKA KR300 5-axis Cell — watch in Recent Works">
+            <h3>KUKA KR300 5-axis Cell</h3>
+            <p class="card-sub">Sherpy Inc.</p>
+            <ul>
+              <li>Integrated Fusion 360 CAM and RoboDK for 5-axis robotic milling — $0 added cost.</li>
+              <li>Manufactured large foam molds with HSD ES951 spindle — 75% timeline reduction.</li>
+              <li>Trained two employees on KUKA safety, KRL, and WorkVisual 6.0.</li>
+            </ul>
+            <span class="card-cta" aria-hidden="true">▶ Watch in Recent Works</span>
+          </article>
 
-			</div>
+          <article class="card">
+            <h3>Concrete 3D-Printing Cell</h3>
+            <p class="card-sub">Sherpy Inc.</p>
+            <ul>
+              <li>Robotic 3D-printing cell with a KUKA KR300 and Fusion 360 CAM.</li>
+              <li>Custom print head fed directly by a concrete pump.</li>
+              <li>Custom KRL post-processor authored from the Fusion CAM library.</li>
+            </ul>
+          </article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+          <article class="card">
+            <h3>Autonomous Catamaran</h3>
+            <p class="card-sub">Mahmoudian Labs · ROS</p>
+            <ul>
+              <li>Built a differential-thrust ROS node for autonomous surface operations.</li>
+              <li>Validated for 12 hours of continuous autonomous run-time.</li>
+              <li>Designed a corrosion-resistant weight system for a companion submarine.</li>
+            </ul>
+          </article>
 
-	</body>
+          <article class="card">
+            <h3>UAS Detect-and-Avoid Sim</h3>
+            <p class="card-sub">Sherpy Inc. · Unreal · ArduPilot SITL</p>
+            <ul>
+              <li>Built an Unreal Engine simulation with Microsoft AirSim.</li>
+              <li>Integrated ArduPilot SITL for hardware-faithful flight behavior.</li>
+              <li>Authored a C++ DAA solution against thermal + visible camera inputs.</li>
+            </ul>
+          </article>
+
+          <article class="card card-link" data-link="pixhawk" tabindex="0" role="link" aria-label="Pixhawk VTOL Configuration — watch flight tests in Recent Works">
+            <h3>Pixhawk VTOL Configuration</h3>
+            <p class="card-sub">Sherpy Inc.</p>
+            <ul>
+              <li>Configured Pixhawk autopilot for VTOL UAS via Mission Planner.</li>
+              <li>Led wiring for a 3 m wingspan VTOL using FAA advisory circulars.</li>
+              <li>Flight-tested resulting builds at NYC FRIAs.</li>
+            </ul>
+            <span class="card-cta" aria-hidden="true">▶ Watch in Recent Works</span>
+          </article>
+
+          <article class="card">
+            <h3>LH<sub>2</sub> Composite Tank</h3>
+            <p class="card-sub">Sherpy Inc.</p>
+            <ul>
+              <li>Designed a 1 m liquid-hydrogen composite tank in Fusion 360.</li>
+              <li>Studied NASA whitepapers and Wesley Johnson's MLI thesis.</li>
+              <li>Got a Pfeiffer HiPace80 turbomolecular pump operational from eBay.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Polariton Metamaterials</h3>
+            <p class="card-sub">Specere Labs · COMSOL</p>
+            <ul>
+              <li>Computationally analyzed metamaterial stacks in COMSOL Optics.</li>
+              <li>Studied phonon / polariton thermal conductivity from a solid-state-physics view.</li>
+              <li>Work presented at IMECE 2022 with Dr. Thomas Beechem.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Turbocharger Manifold</h3>
+            <p class="card-sub">RODETUR · Zucrow Labs</p>
+            <ul>
+              <li>Manufactured an SS304 manifold on a HAAS VF-2 — designed the CAM in-house.</li>
+              <li>Built a modular test stand suspending a 70 lb turbocharger.</li>
+              <li>Sourced control valves rated 450 °F and 5 bar.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">05</span> Skills</h2>
+        <div class="skill-grid">
+          <div class="skill-group">
+            <h3>Robotics frameworks</h3>
+            <ul class="chip-list">
+              <li>ROS</li>
+              <li>OpenCV</li>
+              <li>URDF</li>
+              <li>ArduPilot</li>
+              <li>KUKA WorkVisual</li>
+              <li>Zephyr RTOS</li>
+              <li>RoboDK</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Robots & hardware</h3>
+            <ul class="chip-list">
+              <li>KUKA KR300 / KRL</li>
+              <li>Flexiv</li>
+              <li>Jaka</li>
+              <li>Fanuc</li>
+              <li>Linkerbot</li>
+              <li>Pixhawk</li>
+              <li>Jetson AGX</li>
+              <li>HAAS Minimill / VF-2</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Programming</h3>
+            <ul class="chip-list">
+              <li>C / C++</li>
+              <li>Python</li>
+              <li>MATLAB / Simulink</li>
+              <li>PostgreSQL</li>
+              <li>MVVM app dev</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>CAD / CAE</h3>
+            <ul class="chip-list">
+              <li>Siemens NX 12</li>
+              <li>SolidWorks</li>
+              <li>Fusion 360</li>
+              <li>CATIA</li>
+              <li>ANSYS</li>
+              <li>COMSOL</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Spoken languages</h3>
+            <ul class="chip-list">
+              <li>English (Fluent)</li>
+              <li>Malay (Fluent)</li>
+              <li>Indonesian (Fluent)</li>
+              <li>Tamil (Basic)</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Credentials</h3>
+            <ul class="chip-list">
+              <li>FAA Part 107</li>
+              <li>18 provisional patents</li>
+              <li>Fall 2020 Semester Honors</li>
+              <li>Co-founder, NeuroTech Society @ Purdue</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-block">
+        <h2 class="section-title"><span class="section-num">06</span> Contact</h2>
+        <p class="prose">
+          Open to talk about robotics integration, autonomy, and hardware /
+          firmware roles. Email is the fastest way.
+        </p>
+        <ul class="contact-list" role="list">
+          <li>
+            <span class="contact-key">Email</span>
+            <a href="mailto:surajratnam99@gmail.com">surajratnam99@gmail.com</a>
+          </li>
+          <!-- <li>
+            <span class="contact-key">Phone</span>
+            <a href="tel:+60178908476">+60 17890-8476</a>
+          </li> -->
+          <li>
+            <span class="contact-key">LinkedIn</span>
+            <a href="https://linkedin.com/in/skrnam110" target="_blank" rel="noopener">linkedin.com/in/skrnam110</a>
+          </li>
+          <li>
+            <span class="contact-key">GitHub</span>
+            <a href="https://github.com/Surajkumar20" target="_blank" rel="noopener">github.com/Surajkumar20</a>
+          </li>
+          <!-- <li>
+            <span class="contact-key">CV</span>
+            <a href="suraj-kumar-cv.pdf" download>suraj-kumar-cv.pdf</a>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; <span id="year"></span> Suraj Kumar Raja Ratnam.</p>
+      <p class="footer-meta">Built with plain HTML, CSS, and a dash of JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
 </html>
